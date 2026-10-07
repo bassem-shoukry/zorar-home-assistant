@@ -1,0 +1,13 @@
+{
+  "domain": "zorar",
+  "name": "Zorar",
+  "codeowners": ["@bassem-shoukry"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/bassem-shoukry/zorar-home-assistant",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/bassem-shoukry/zorar-home-assistant/issues",
+  "requirements": [],
+  "version": "0.2.0"
+}

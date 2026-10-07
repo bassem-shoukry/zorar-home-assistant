@@ -1,0 +1,85 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "الاتصال بـ Zorar",
+        "menu_options": {
+          "pair": "اربط مع تطبيق Zorar",
+          "token": "دخّل رمز"
+        }
+      },
+      "pair": {
+        "title": "اربط مع تطبيق Zorar",
+        "description": "دوس إرسال عشان تجرّب تاني."
+      },
+      "pair_expired": {
+        "title": "الكود انتهى",
+        "description": "الكود انتهى قبل ما يتكتب في التطبيق.",
+        "menu_options": {
+          "pair": "هات كود جديد",
+          "token": "دخّل رمز"
+        }
+      },
+      "token": {
+        "title": "دخّل رمز",
+        "description": "في تطبيق Zorar، افتح الإعدادات ← Home Assistant وانسخ الرمز.",
+        "data": {
+          "api_token": "رمز الوصول",
+          "base_url": "عنوان الخادم"
+        }
+      },
+      "reauth_confirm": {
+        "title": "إعادة المصادقة مع Zorar",
+        "description": "رمز Zorar مش صالح أو انتهى.",
+        "menu_options": {
+          "pair": "اربط مع تطبيق Zorar",
+          "token": "دخّل رمز"
+        }
+      }
+    },
+    "progress": {
+      "wait_for_approval": "في تطبيق Zorar، افتح **الإعدادات ← Home Assistant** واكتب الكود **{code}**.\n\nالكود بينتهي بعد {minutes} دقايق."
+    },
+    "error": {
+      "invalid_auth": "الرمز غير صالح أو منتهي الصلاحية",
+      "cannot_connect": "تعذّر الاتصال بخادم Zorar",
+      "unknown": "حدث خطأ غير متوقع",
+      "insecure_url": "استخدم عنوان يبدأ بـ https://. عنوان http:// مسموح بس لخادم محلي أو على شبكة خاصة"
+    },
+    "abort": {
+      "already_configured": "حساب Zorar هذا مُضاف بالفعل",
+      "reauth_successful": "تمت إعادة المصادقة بنجاح",
+      "wrong_account": "ده حساب Zorar مختلف عن الحساب المتضاف هنا.",
+      "cannot_connect": "تعذّر الاتصال بخادم Zorar",
+      "invalid_auth": "خادم Zorar رفض الرمز الجديد",
+      "unknown": "حدث خطأ غير متوقع"
+    }
+  },
+  "entity": {
+    "switch": {
+      "outlet": {
+        "name": "المقبس {channel}"
+      }
+    }
+  },
+  "exceptions": {
+    "strip_unavailable": {
+      "message": "المشترك ده مبقاش متاح"
+    },
+    "strip_offline": {
+      "message": "المشترك مش متوصل دلوقتي"
+    },
+    "rate_limited": {
+      "message": "بعت أوامر كتير لـ Zorar؛ جرّب تاني بعد دقيقة"
+    },
+    "auth_failed": {
+      "message": "رمز Zorar مش صالح أو انتهى؛ لازم تعمل مصادقة من جديد"
+    },
+    "forbidden": {
+      "message": "رمز Zorar ده مالوش صلاحية على المشترك ده"
+    },
+    "command_failed": {
+      "message": "أمر Zorar ما اتنفذش: {error}"
+    }
+  }
+}

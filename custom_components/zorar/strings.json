@@ -1,0 +1,85 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Zorar",
+        "menu_options": {
+          "pair": "Pair with the Zorar app",
+          "token": "Enter a token"
+        }
+      },
+      "pair": {
+        "title": "Pair with the Zorar app",
+        "description": "Submit to try again."
+      },
+      "pair_expired": {
+        "title": "Code expired",
+        "description": "The pairing code expired before it was entered in the app.",
+        "menu_options": {
+          "pair": "Get a new code",
+          "token": "Enter a token"
+        }
+      },
+      "token": {
+        "title": "Enter a token",
+        "description": "In the Zorar app, open Settings → Home Assistant and copy your token.",
+        "data": {
+          "api_token": "API token",
+          "base_url": "Server URL"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate Zorar",
+        "description": "Your Zorar token is invalid or has expired.",
+        "menu_options": {
+          "pair": "Pair with the Zorar app",
+          "token": "Enter a token"
+        }
+      }
+    },
+    "progress": {
+      "wait_for_approval": "In the Zorar app, open **Settings → Home Assistant** and enter code **{code}**.\n\nThe code expires in {minutes} minutes."
+    },
+    "error": {
+      "invalid_auth": "Invalid or expired token",
+      "cannot_connect": "Failed to connect to the Zorar server",
+      "unknown": "Unexpected error",
+      "insecure_url": "Use an https:// address. Plain http:// is only allowed for a local or private-network server"
+    },
+    "abort": {
+      "already_configured": "This Zorar account is already configured",
+      "reauth_successful": "Re-authentication was successful",
+      "wrong_account": "This is a different Zorar account from the one set up here.",
+      "cannot_connect": "Failed to connect to the Zorar server",
+      "invalid_auth": "The Zorar server rejected the new token",
+      "unknown": "Unexpected error"
+    }
+  },
+  "entity": {
+    "switch": {
+      "outlet": {
+        "name": "Outlet {channel}"
+      }
+    }
+  },
+  "exceptions": {
+    "strip_unavailable": {
+      "message": "Zorar strip is no longer available"
+    },
+    "strip_offline": {
+      "message": "Zorar strip is offline"
+    },
+    "rate_limited": {
+      "message": "Too many Zorar commands; try again in a minute"
+    },
+    "auth_failed": {
+      "message": "Zorar token is invalid or expired; re-authentication required"
+    },
+    "forbidden": {
+      "message": "Zorar token has no access to this strip"
+    },
+    "command_failed": {
+      "message": "Zorar command failed: {error}"
+    }
+  }
+}
