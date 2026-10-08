@@ -22,7 +22,7 @@
       },
       "token": {
         "title": "دخّل رمز",
-        "description": "في تطبيق Zorar، افتح الإعدادات ← Home Assistant وانسخ الرمز.",
+        "description": "في تطبيق Zorar، افتح الحساب ← Home Assistant وانسخ الرمز.",
         "data": {
           "api_token": "رمز الوصول",
           "base_url": "عنوان الخادم"
@@ -38,7 +38,7 @@
       }
     },
     "progress": {
-      "wait_for_approval": "في تطبيق Zorar، افتح **الإعدادات ← Home Assistant** واكتب الكود **{code}**.\n\nالكود بينتهي بعد {minutes} دقايق."
+      "wait_for_approval": "في تطبيق Zorar، افتح **الحساب ← Home Assistant** واكتب الكود **{code}**.\n\nالكود بينتهي بعد {minutes} دقايق."
     },
     "error": {
       "invalid_auth": "الرمز غير صالح أو منتهي الصلاحية",

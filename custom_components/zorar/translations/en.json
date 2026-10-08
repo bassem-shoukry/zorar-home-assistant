@@ -22,7 +22,7 @@
       },
       "token": {
         "title": "Enter a token",
-        "description": "In the Zorar app, open Settings → Home Assistant and copy your token.",
+        "description": "In the Zorar app, open Account → Home Assistant and copy your token.",
         "data": {
           "api_token": "API token",
           "base_url": "Server URL"
@@ -38,7 +38,7 @@
       }
     },
     "progress": {
-      "wait_for_approval": "In the Zorar app, open **Settings → Home Assistant** and enter code **{code}**.\n\nThe code expires in {minutes} minutes."
+      "wait_for_approval": "In the Zorar app, open **Account → Home Assistant** and enter code **{code}**.\n\nThe code expires in {minutes} minutes."
     },
     "error": {
       "invalid_auth": "Invalid or expired token",

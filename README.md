@@ -20,7 +20,7 @@ folder and restart.
 
 1. Click the button above (or **Settings → Devices & services → Add integration → Zorar**).
 2. Choose **Pair with the Zorar app**. Home Assistant shows a code.
-3. In the Zorar app open **Settings → Home Assistant**, enter the code and tap **Connect**.
+3. In the Zorar app open **Account → Home Assistant**, enter the code and tap **Connect**.
 
 Home Assistant finishes on its own. Each strip appears as a device with four outlet switches.
 
@@ -30,7 +30,7 @@ Home Assistant finishes on its own. Each strip appears as a device with four out
 - There is no "all outlets" switch, and no power or energy sensors yet (the strip's units for
   those readings are not verified).
 - A strip that is offline shows its outlets as unavailable.
-- To disconnect, open **Settings → Home Assistant** in the Zorar app and tap **Revoke**.
+- To disconnect, open **Account → Home Assistant** in the Zorar app and tap **Revoke**.
 
 ## Support
 
